@@ -48,7 +48,7 @@
         <a target="_blank" href="https://fengwenyi.com?fs=mpcg">
             <img class="logo" src="/static/images/logo.jpg" alt="logo"/>
         </a>
-        <h1 class="title">MyBatis-Plus代码生成器</h1>
+        <h1 class="title" style="color: white;">MyBatis-Plus代码生成器</h1>
     </div>
 
     <!--<div class="layui-progress" style="margin: 15px 0 30px;">
@@ -72,9 +72,9 @@
                 </div>
 
                 <div class="layui-form-item">
-                    <label class="layui-form-label">实体父类</label>
+                    <label class="layui-form-label">实体父类(可选)</label>
                     <div class="layui-input-block">
-                        <input type="text" name="superClassName" placeholder="请输入实体父类的全类名" autocomplete="off"
+                        <input type="text" name="superClassName" placeholder="实体类父类的全类名(例:com.lecy.BaseEntity)" autocomplete="off"
                                class="layui-input">
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">输出目录</label>
                     <div class="layui-input-block">
-                        <input type="text" name="outDir" id="outputDir" placeholder="输出目录" autocomplete="off"
+                        <input type="text" name="outDir" id="outputDir" placeholder="本地输出目录" autocomplete="off"
                                class="layui-input">
                     </div>
                 </div>
@@ -171,7 +171,7 @@
             <div class="main-right-panel">
                 <div class="layui-collapse">
                     <div class="layui-colla-item">
-                        <h2 class="layui-colla-title">表配置</h2>
+                        <h2 class="layui-colla-title">表配置(可选)</h2>
                         <div class="layui-colla-content layui-show">
                             <div class="layui-form-item">
                                 <label class="layui-form-label">表名(默认全部)</label>
@@ -207,7 +207,7 @@
                         </div>
                     </div>
                     <div class="layui-colla-item">
-                        <h2 class="layui-colla-title">包名配置</h2>
+                        <h2 class="layui-colla-title">包名配置(可选)</h2>
                         <div class="layui-colla-content">
                             <div class="layui-form-item">
                                 <label class="layui-form-label">实体类</label>
@@ -235,14 +235,14 @@
                                 <label class="layui-form-label">service</label>
                                 <div class="layui-input-block">
                                     <input type="text" name="packageService" placeholder="请输入service包名"
-                                           value="mp" autocomplete="off" class="layui-input">
+                                           value="service" autocomplete="off" class="layui-input">
                                 </div>
                             </div>
                             <div class="layui-form-item">
                                 <label class="layui-form-label">service.impl</label>
                                 <div class="layui-input-block">
                                     <input type="text" name="packageServiceImpl" placeholder="请输入Service Impl包名"
-                                           value="mp.impl" autocomplete="off" class="layui-input">
+                                           value="service.impl" autocomplete="off" class="layui-input">
                                 </div>
                             </div>
 
@@ -256,7 +256,7 @@
                         </div>
                     </div>
                     <div class="layui-colla-item">
-                        <h2 class="layui-colla-title">文件名格式</h2>
+                        <h2 class="layui-colla-title">文件名格式(可选)</h2>
                         <div class="layui-colla-content">
                             <div class="layui-form-item">
                                 <label class="layui-form-label">实体类</label>
@@ -269,7 +269,7 @@
                                 <label class="layui-form-label">mapper</label>
                                 <div class="layui-input-block">
                                     <input type="text" name="fileNamePatternMapper" placeholder="请输入Mapper文件名格式"
-                                           value="I%sMapper" autocomplete="off" class="layui-input">
+                                           value="%sMapper" autocomplete="off" class="layui-input">
                                 </div>
                             </div>
                             <div class="layui-form-item">
@@ -284,14 +284,14 @@
                                 <label class="layui-form-label">service</label>
                                 <div class="layui-input-block">
                                     <input type="text" name="fileNamePatternService" placeholder="请输入service文件名格式"
-                                           value="IMp%sService" autocomplete="off" class="layui-input">
+                                           value="%sService" autocomplete="off" class="layui-input">
                                 </div>
                             </div>
                             <div class="layui-form-item">
                                 <label class="layui-form-label">service.impl</label>
                                 <div class="layui-input-block">
                                     <input type="text" name="fileNamePatternServiceImpl" placeholder="请输入Service Impl包名"
-                                           value="Mp%sServiceImpl" autocomplete="off" class="layui-input">
+                                           value="%sServiceImpl" autocomplete="off" class="layui-input">
                                 </div>
                             </div>
 
@@ -305,7 +305,7 @@
                         </div>
                     </div>
                     <div class="layui-colla-item">
-                        <h2 class="layui-colla-title">字段名配置</h2>
+                        <h2 class="layui-colla-title">字段名配置(可选)</h2>
                         <div class="layui-colla-content">
                             <div class="layui-form-item">
                                 <label class="layui-form-label">逻辑删除</label>
@@ -326,7 +326,7 @@
                     </div>
 
                     <div class="layui-colla-item">
-                        <h2 class="layui-colla-title">实体类配置</h2>
+                        <h2 class="layui-colla-title">实体类配置(可选)</h2>
                         <div class="layui-colla-content">
                             <div class="layui-form-item">
                                 <label class="layui-form-label">是否支持Swagger</label>
@@ -386,7 +386,7 @@
                     </div>
 
                     <div class="layui-colla-item">
-                        <h2 class="layui-colla-title">XML配置</h2>
+                        <h2 class="layui-colla-title">XML配置(可选)</h2>
                         <div class="layui-colla-content">
                             <!--<div class="layui-form-item">
                                 <label class="layui-form-label">是否开启二级缓存</label>
@@ -415,7 +415,7 @@
                     </div>
 
                     <div class="layui-colla-item">
-                        <h2 class="layui-colla-title">其他配置</h2>
+                        <h2 class="layui-colla-title">其他配置(可选)</h2>
                         <div class="layui-colla-content">
                             <!--<div class="layui-form-item">
                                 <label class="layui-form-label">模板引擎</label>

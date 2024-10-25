@@ -22,7 +22,7 @@ html {
     content: '';
     z-index: -1;
     /*background-image: url('https://api.dujin.org/bing/1366.php');*/
-    background-image: url('/static/images/bg.jpg');
+    background-image: url('/static/images/bg.jpeg');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
