@@ -6,7 +6,7 @@ layui.use(function() {
 
     let $ = jQuery;
 
-    let author = '<a href="https://fengwenyi.com?fs=mpcg">Erwin Feng</a>';
+    let author = '';
     let htmlInitOptionSelect = '<option value="">请选择</option>';
     let htmlInitOptionAdd = '<option value="">添加新的配置</option>';
 

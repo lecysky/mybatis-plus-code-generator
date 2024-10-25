@@ -174,40 +174,35 @@
                         <h2 class="layui-colla-title">表配置</h2>
                         <div class="layui-colla-content layui-show">
                             <div class="layui-form-item">
-                                <label class="layui-form-label">忽略的字段</label>
+                                <label class="layui-form-label">表名(默认全部)</label>
                                 <div class="layui-input-block">
-                                    <textarea name="ignoreColumns" placeholder="请输入列名，以英文逗号隔开" class="layui-textarea"></textarea>
+                                    <textarea name="tableNames" placeholder="请输入需要生成的表名，以英文逗号隔开" class="layui-textarea"></textarea>
                                 </div>
                             </div>
-
                             <div class="layui-form-item">
-                                <label class="layui-form-label">表名</label>
+                                <label class="layui-form-label">表前缀去除</label>
                                 <div class="layui-input-block">
-                                    <textarea name="tableNames" placeholder="请输入表名，以英文逗号隔开" class="layui-textarea"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="layui-form-item">
-                                <label class="layui-form-label">表前缀</label>
-                                <div class="layui-input-block">
-                                    <input type="text" name="tablePrefixes" placeholder="请输入表前缀，以英文逗号隔开" autocomplete="off"
+                                    <input type="text" name="tablePrefixes" placeholder="请输入需要去除的表前缀，以英文逗号隔开" autocomplete="off"
                                            class="layui-input">
                                 </div>
                             </div>
-
                             <div class="layui-form-item">
-                                <label class="layui-form-label">字段前缀</label>
+                                <label class="layui-form-label">表排除</label>
                                 <div class="layui-input-block">
-                                    <input type="text" name="fieldPrefixes" placeholder="请输入字段前缀，以英文逗号隔开" autocomplete="off"
+                                    <textarea name="excludeTableNames" placeholder="请输入需要排除的表名，以英文逗号隔开" class="layui-textarea"></textarea></div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">字段前缀去除</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="fieldPrefixes" placeholder="请输入需要去除的字段前缀，以英文逗号隔开" autocomplete="off"
                                            class="layui-input">
                                 </div>
                             </div>
-
                             <div class="layui-form-item">
-                                <label class="layui-form-label">排除的表名</label>
+                                <label class="layui-form-label">字段忽略</label>
                                 <div class="layui-input-block">
-                        <textarea name="excludeTableNames" placeholder="请输入表名，以英文逗号隔开"
-                                  class="layui-textarea"></textarea></div>
+                                    <textarea name="ignoreColumns" placeholder="请输入需要忽略的字段列名，以英文逗号隔开" class="layui-textarea"></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
